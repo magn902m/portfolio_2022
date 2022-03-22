@@ -60,7 +60,7 @@ html[data-theme="dark"] {
 
 h1 {
   font-family: p22-mackinac-pro, serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -81,6 +81,8 @@ p {
   font-family: p22-mackinac-pro, serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.8rem;
+  font-size: 1rem;
 }
 
 a {
@@ -89,6 +91,35 @@ a {
   font-style: normal;
   color: var(--color-secondary1);
   font-size: 1.5rem;
+  transition: 1s;
+}
+
+a:hover {
+  text-decoration: 4px underline var(--color-accent2);
+  color: var(--color-accent2);
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
 }
 
 /********** Main layout rules **********/
@@ -145,31 +176,66 @@ header ul {
 /********** Introductory rules **********/
 
 #introductory_section img {
-  max-width: 40%;
+  /* max-width: 40%; */
+  grid-column: 3/4;
+  grid-row: 1;
+  justify-self: center;
+  width: 40vw;
 }
 
 #introductory_section .section_wrapper {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+
+  background-image: url("/assets/img/om_mig_img.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 57vh;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  /* 
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 2fr) 1fr;
+  grid-template-rows: repeat(5, 1fr); */
 }
 
-/********** Projects rules **********/
+#introductory_section p:first-child {
+  grid-area: 1 / 2 / 2 / 6;
+  font-size: 2rem;
+  align-self: center;
+}
+#introductory_section h1:nth-child(2) {
+  grid-area: 4 / 1 / 4 / 6;
+  font-size: 2.2rem;
+}
+#introductory_section p:last-child {
+  grid-area: 5 / 3 / 5 / 6;
+  font-size: 1.5rem;
+}
+
+/********** projects rules **********/
 
 /* card rules */
 #projects_section .section_wrapper {
   display: grid;
   margin-top: 2rem;
   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
   grid-column: 2/3;
   /* grid-row: 2; */
 }
 
-.project_card img {
+/* .project_card img {
   border-radius: 0.5rem 0.5rem 0 0;
-}
+} */
 
 .project_card {
   border-radius: 0.5rem;
@@ -182,6 +248,7 @@ header ul {
   background-color: var(--color-primary1);
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 1rem;
+  align-items: center;
 }
 
 #projects_section {
@@ -190,23 +257,37 @@ header ul {
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  border-radius: 0 0 0.5rem 0.5rem;
   /* grid-template-columns: auto; */
 }
 
 #projects_section h2 {
   grid-column: 2/3;
+  color: var(--color-primary2);
 }
 
 .projects_cards {
   display: grid;
   margin-top: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   grid-column: 2/3;
   grid-row: 2;
 }
 
-/********** Aside rules **********/
+/********** about rules **********/
+
+#about_section .section_wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+#about_section .about_text {
+  display: grid;
+  gap: 2rem;
+}
+
+/********** aside rules **********/
 
 aside {
   display: flex;
@@ -223,8 +304,29 @@ aside {
   height: auto;
 }
 
+/********** footer rules **********/
+
+footer {
+  background-color: var(--color-accent1);
+  /* display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr; */
+  padding: 5rem 1rem 5rem 1rem;
+}
+footer h2 {
+  /* font-size: 2.5rem; */
+  font-size: 13vw;
+  color: var(--color-primary2);
+}
+footer a {
+  font-size: 5rem;
+  color: var(--color-primary1);
+}
+footer .section_wrapper {
+  grid-column: 2/3;
+}
+
 @media (min-width: 800px) and (orientation: landscape) {
-  /********** Projects rules **********/
+  /********** projects rules **********/
 
   /* card rules */
   /* #projects_section .section_wrapper {
@@ -233,4 +335,10 @@ aside {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1rem;
   } */
+
+  /********** about rules **********/
+
+  #about_section .section_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
