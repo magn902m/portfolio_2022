@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magnus Nielsen</title>
 
-    <!-- Styles and js -->
+    <!-- css and js -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/brugermenu.css" />
     <link rel="stylesheet" href="css/night_mode.css" />
@@ -25,24 +25,28 @@
     <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/xvx7mcu.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
           <a href="index.html">
-            <img src="assets/img/logo/logo_rund.svg" alt="MN logo" />
+            <!-- <img src="assets/img/logo/logo_rund.svg" alt="MN logo" /> -->
+            <h2>mn</h2>
           </a>
         </div>
 
         <!-- Burgermenu der vises på mobil -->
         <ul id="menu" class="hide">
-          <li><a href="fonts_and_cards.html" id="projects" class="a_btn_outline">Projects</a></li>
+          <li><a href="fonts_and_cards.html" id="projects" class="a_btn_outline">projects</a></li>
           <li>
-            <a href="index.html#third_section" id="about" class="a_btn_outline">About</a>
+            <a href="index.html#third_section" id="about" class="a_btn_outline">about</a>
           </li>
           <li>
-            <a href="contact.html" id="contact" class="a_btn">Contact</a>
+            <a href="contact.html" id="contact" class="a_btn">contact</a>
           </li>
         </ul>
         <!-- Her er vores burgermenu knap, som består af 3 linjer, der kun vises på mobil -->
@@ -57,26 +61,78 @@
     <main>
       <section id="introductory_section">
         <article class="section_wrapper">
-          <h1>Magnus Nielsen</h1>
-          <img src="https://source.unsplash.com/random/200x200?sig=1" alt="" />
+          <h1>magnus nielsen</h1>
+          <!-- <img src="https://source.unsplash.com/random/200x200?sig=1" alt="" /> -->
+          <img src="assets/img/om_mig_img.webp" alt="" />
         </article>
       </section>
 
       <section id="projects_section">
         <article class="section_wrapper">
-          <h2>My projects</h2>
+          <h2>my projects</h2>
+          <div class="projects_cards">
+            <article class="project_card">
+              <img src="assets/img/projects/colors_animation.png" alt="" />
+              <div class="project_card_info">
+                <h3>save the turtles</h3>
+                <a href="projects.html#save_the_turtles">&#8594;</a>
+              </div>
+            </article>
+            <article class="project_card">
+              <img src="assets/img/projects/colors_animation.png" alt="" />
+              <div class="project_card_info">
+                <h3>1 sem. portfolio</h3>
+                <a href="projects.html#1_sem_portfolio">&#8594;</a>
+              </div>
+            </article>
+            <article class="project_card">
+              <img src="assets/img/projects/colors_animation.png" alt="" />
+              <div class="project_card_info">
+                <h3>2 sem. portfolio</h3>
+                <a href="projects.html#2_sem_portfolio">&#8594;</a>
+              </div>
+            </article>
+            <article class="project_card">
+              <img src="assets/img/projects/colors_animation.png" alt="" />
+              <div class="project_card_info">
+                <h3>2 sem. exam project</h3>
+                <a href="projects.html#2_sem_exam_projects">&#8594;</a>
+              </div>
+            </article>
+            <article class="project_card">
+              <img src="assets/img/projects/colors_animation.png" alt="" />
+              <div class="project_card_info">
+                <h3>hacked hogwarts student list</h3>
+                <a href="projects.html#hacked_hogwarts_student_list">&#8594;</a>
+              </div>
+            </article>
+          </div>
         </article>
       </section>
 
       <section id="about_section">
         <article class="section_wrapper">
-          <h2>About me</h2>
+          <h2>about me</h2>
+          <p>
+            My name is Magnus Nielsen, 22 years old and loves to be creative in communication,
+            design and everything that is about websites.
+          </p>
+          <p>
+            On a daily basis, I study at KEA, as a multimedia designer for 3 semesters. Where I have
+            chosen the elective frontend design, as I find coding behind websites super exciting.
+          </p>
+          <p>
+            I have experience with html, css, js, ux, ui, design and more. But I am ready to get
+            more and explore new challenges
+          </p>
         </article>
       </section>
 
       <section id="contact_section">
         <article class="section_wrapper">
-          <h2>Do you have my next project?</h2>
+          <h2>do you have my next project?</h2>
+          <img src="" alt="" />
+          <a href=""></a>
         </article>
       </section>
     </main>
