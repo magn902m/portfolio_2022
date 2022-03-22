@@ -58,6 +58,39 @@ html[data-theme="dark"] {
   /* --box-shadow-1: #0206053d; */
 }
 
+h1 {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,
+h3 {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h4 {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-secondary1);
+  font-size: 1.5rem;
+}
+
 /********** Main layout rules **********/
 main {
   display: grid;
@@ -75,7 +108,7 @@ main > section {
 header {
   background-color: var(--color-primary1);
   box-shadow: 1px 1px 2px 5px var(--box-shadow-1);
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   left: 0;
 }
@@ -84,7 +117,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: var(--color-primary2);
+  /* background-color: var(--color-primary2); */
 }
 
 header ul {
@@ -94,8 +127,11 @@ header ul {
   align-items: center;
 }
 
-.logo img,
-.arrow_top img {
+.logo {
+  align-self: center;
+}
+
+.logo img {
   width: 70px;
   min-width: 40px;
   max-width: 100%;
@@ -104,4 +140,97 @@ header ul {
 
 .logo:hover {
   opacity: 0.8;
+}
+
+/********** Introductory rules **********/
+
+#introductory_section img {
+  max-width: 40%;
+}
+
+#introductory_section .section_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/********** Projects rules **********/
+
+/* card rules */
+#projects_section .section_wrapper {
+  display: grid;
+  margin-top: 2rem;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-gap: 1rem;
+  grid-column: 2/3;
+  /* grid-row: 2; */
+}
+
+.project_card img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.project_card {
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px var(--color-secondary1);
+}
+
+.project_card_info {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary1);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1rem;
+}
+
+#projects_section {
+  background-color: var(--color-accent1);
+  padding: 2rem;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  /* grid-template-columns: auto; */
+}
+
+#projects_section h2 {
+  grid-column: 2/3;
+}
+
+.projects_cards {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+/********** Aside rules **********/
+
+aside {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  position: sticky;
+  bottom: 0;
+}
+
+.arrow_top img {
+  width: 70px;
+  min-width: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  /********** Projects rules **********/
+
+  /* card rules */
+  /* #projects_section .section_wrapper {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+  } */
 }
