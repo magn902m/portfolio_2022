@@ -132,7 +132,7 @@ main > section {
   grid-column: 2/3;
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
-  margin-top: 5.5rem;
+  margin-top: 4rem;
 }
 
 /********** Menu rules **********/
@@ -240,9 +240,10 @@ header ul {
 .project_card {
   border-radius: 0.5rem;
   box-shadow: 1px 1px 1px var(--color-secondary1);
+  background-color: var(--color-primary1);
 }
 
-.project_card_info {
+.project_card_info a {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primary1);
@@ -251,9 +252,17 @@ header ul {
   align-items: center;
 }
 
+.project_card_info img {
+  width: 30px;
+}
+
+.project_card h3 {
+  font-size: 1.4rem;
+}
+
 #projects_section {
   background-color: var(--color-accent1);
-  padding: 2rem;
+  padding: 2rem 2rem 8rem 2rem;
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
@@ -275,16 +284,44 @@ header ul {
   grid-row: 2;
 }
 
+.project_card img {
+  object-fit: cover;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.project_card img:hover {
+  opacity: 1;
+}
+
 /********** about rules **********/
 
 #about_section .section_wrapper {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #about_section .about_text {
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cv,
+.skills {
+  width: 100%;
+  height: 20vw;
+  background-color: var(--color-accent2);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.cv:hover,
+.skills:hover {
+  background-color: var(--color-primary1);
+  border: 1rem solid var(--color-accent2);
 }
 
 /********** aside rules **********/
@@ -292,9 +329,12 @@ header ul {
 aside {
   display: flex;
   align-items: end;
-  flex-direction: column;
+  /* flex-direction: column; */
   position: sticky;
   bottom: 0;
+  justify-content: end;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .arrow_top img {
@@ -303,6 +343,12 @@ aside {
   max-width: 100%;
   height: auto;
 }
+
+/* .arrow_top img:hover {
+  background-image: url("/assets/img/icons/circle-arrow-up-solid.svg");
+  fill: red;
+  z-index: 1;
+} */
 
 /********** footer rules **********/
 
@@ -336,9 +382,18 @@ footer .section_wrapper {
     grid-gap: 1rem;
   } */
 
+  .projects_cards {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
   /********** about rules **********/
 
   #about_section .section_wrapper {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #about_section .section_wrapper {
+    gap: 0;
   }
 }
