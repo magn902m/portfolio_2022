@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magnus Nielsen</title>
+
+    <!-- css and js -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/brugermenu.css" />
+    <link rel="stylesheet" href="css/night_mode.css" />
+    <link rel="stylesheet" href="css/about.css" />
+
+    <script defer src="js/script.js"></script>
+    <script defer src="js/brugermenu.js"></script>
+    <script defer src="js/night_mode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/xvx7mcu.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <!-- <img src="assets/img/logo/logo_rund.svg" alt="MN logo" /> -->
+            <h2>mn</h2>
+          </a>
+        </div>
+
+        <!-- Burgermenu der vises på mobil -->
+        <ul id="menu" class="hide">
+          <li>
+            <a href="index.html#projects_section" id="projects" class="a_btn_outline">projects</a>
+          </li>
+          <li>
+            <a href="about.html" id="about" class="a_btn_outline">about</a>
+          </li>
+          <li>
+            <a href="contact.html" id="contact" class="a_btn">contact</a>
+          </li>
+        </ul>
+        <!-- Her er vores burgermenu knap, som består af 3 linjer, der kun vises på mobil -->
+        <div id="burger_btn">
+          <div class="stroke top"></div>
+          <div class="stroke center"></div>
+          <div class="stroke bottom"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro_section">
+        <article class="section_wrapper">
+          <div class="about_div">
+            <h1>about</h1>
+            <p>click on something</p>
+          </div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class="cv"><a href="">cv</a></div>
+          <div class="skills"><a href="">skills</a></div>
+          <div class="img_div"></div>
+        </article>
+      </section>
+
+      <section id="about_me_section">
+        <article class="section_wrapper">
+          <h2>about me</h2>
+          <div class="about_me_text">
+            <p>
+              My name is Magnus Nielsen, 22 years old and loves to be creative in communication,
+              design and everything that is about websites.
+            </p>
+            <p>
+              On a daily basis, I study at KEA, as a multimedia designer for 3 semesters. Where I
+              have chosen the elective frontend design, as I find coding behind websites super
+              exciting.
+            </p>
+            <p>
+              I have experience with html, css, js, ux, ui, design and more. But I am ready to get
+              more and explore new challenges
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <div class="social_icons">
+        <a href="">
+          <img src="assets/img/icons/facebook-brands.svg" alt="facebook" />
+        </a>
+        <a href="">
+          <img src="assets/img/icons/instagram-brands.svg" alt="instagram" />
+        </a>
+        <a href="">
+          <img src="assets/img/icons/linkedin-brands.svg" alt="linkedin" />
+        </a>
+        <a href="">
+          <img src="assets/img/icons/envelope-solid.svg" alt="email" />
+        </a>
+        <a href="">
+          <img src="assets/img/icons/github-brands.svg" alt="github" />
+        </a>
+      </div>
+    </main>
+
+    <aside>
+      <div class="toggle-container">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+      </div>
+      <div class="arrow_top">
+        <a href="#">
+          <img src="assets/img/icons/circle-arrow-up-solid.svg" alt="arrow up" />
+        </a>
+      </div>
+    </aside>
+
+    <footer>
+      <article class="section_wrapper">
+        <h2>got an idea?</h2>
+        <img src="" alt="" />
+        <a href="contact.html">let me know!</a>
+      </article>
+    </footer>
+  </body>
+</html>
