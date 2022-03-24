@@ -102,6 +102,16 @@ a:hover {
   transform: translate3d(0, 0, 0);
 }
 
+a svg,
+aside a {
+  display: block;
+  width: 70px;
+  min-width: 40px;
+  max-width: 100%;
+  height: auto;
+  fill: var(--color-secondary2);
+}
+
 @keyframes shake {
   10%,
   90% {
@@ -341,19 +351,6 @@ aside {
   padding: 1rem;
   gap: 1rem;
 }
-
-.arrow_top img {
-  width: 70px;
-  min-width: 40px;
-  max-width: 100%;
-  height: auto;
-}
-
-/* .arrow_top img:hover {
-  background-image: url("/assets/img/icons/circle-arrow-up-solid.svg");
-  fill: red;
-  z-index: 1;
-} */
 
 /********** footer rules **********/
 
