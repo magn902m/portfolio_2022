@@ -324,6 +324,11 @@ header ul {
   border: 1rem solid var(--color-accent2);
 }
 
+.cv a,
+.skills a {
+  color: var(--color-primary2);
+}
+
 /********** aside rules **********/
 
 aside {
