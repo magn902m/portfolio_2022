@@ -11,7 +11,8 @@ label {
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: var(--color-accent2);
+  /* background: var(--color-accent2); */
+  background: var(--color-secondary2);
   float: right;
   border-radius: 100px;
   position: relative;

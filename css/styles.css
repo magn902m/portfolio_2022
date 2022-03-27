@@ -112,6 +112,12 @@ aside a {
   fill: var(--color-secondary2);
 }
 
+aside a {
+  background-color: var(--color-primary1);
+  border-radius: 3rem;
+  padding: 0.1rem;
+}
+
 @keyframes shake {
   10%,
   90% {
@@ -411,10 +417,16 @@ aside {
   align-items: end;
   gap: 1rem;
   padding: 1rem;
-  background-color: var(--color-primary1);
+  /* background-color: var(--color-primary1); */
   border-radius: 1rem 0 0 0;
   /* flex-direction: column; */
   /* justify-content: end; */
+}
+
+.toggle-container {
+  background-color: var(--color-primary1);
+  border-radius: 1rem;
+  padding: 0.1rem;
 }
 
 /********** footer rules **********/
