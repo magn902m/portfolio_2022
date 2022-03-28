@@ -51,10 +51,7 @@
 
 #skills_section .section_wrapper {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-template-rows: repeat(2, 1fr); */
   padding: 5rem 1rem;
-
   grid-column: 2/3;
   place-items: center;
 }
@@ -87,13 +84,6 @@
   border-radius: 0.3rem;
 }
 
-/* #skills_section .about_me_text {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  grid-column: 2/3;
-} */
-
 .skill_icon svg {
   width: 40px;
   min-width: 40px;
@@ -106,19 +96,11 @@
 .skill_icon {
   position: relative;
   display: block;
-  /* margin: 2rem 0; */
   background-color: var(--color-primary1);
   color: #222;
   text-align: center;
-  /* padding-bottom: 100%;
-  width: 100%;
-  height: 0;
-  border-radius: 50%; */
 
   display: grid;
-  /* grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr); */
-
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
@@ -161,19 +143,6 @@
   grid-row: 1/3;
 }
 
-/* height: 100%;
-  width: 40vw;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block; */
-
-/* position: relative;
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-  padding-top: 100%;
-  background: white; */
-
 /********** cv rules **********/
 
 #cv_section .cv_img {
@@ -190,9 +159,6 @@
 }
 
 #cv_section .section_wrapper {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); */
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -200,8 +166,6 @@
 
 @media (min-width: 465px) {
   #intro_section .img_div {
-    /* height: 5rem; */
-
     height: 19rem;
     width: 50vw;
     place-self: center;
@@ -238,7 +202,7 @@
 
   #intro_section .section_wrapper {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) auto;
   }
 
   #intro_section .about_div {
