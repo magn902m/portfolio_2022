@@ -444,8 +444,9 @@ aside {
 /********** footer rules **********/
 
 footer {
-  background-color: var(--color-accent1);
-  /* display: grid;
+  background-color: var(
+    --color-secondary2
+  ); /* display: grid;
   grid-template-columns: 1fr minmax(0, 1000px) 1fr; */
   padding: 5rem 1rem 5rem 1rem;
   margin-top: 5rem;
