@@ -118,6 +118,14 @@ aside a {
   padding: 0.1rem;
 }
 
+ul {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  list-style: none;
+}
+
 @keyframes shake {
   10%,
   90% {
@@ -293,8 +301,12 @@ header ul {
 #about_section p {
   color: var(--color-primary2);
   font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
-  line-height: 2.5rem;
+  line-height: 3.2rem;
   text-align: center;
+}
+
+#about_section a {
+  color: var(--color-primary2);
 }
 
 #about_section .section_wrapper {
