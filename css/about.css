@@ -5,6 +5,13 @@
   gap: 1rem;
 }
 
+#intro_section .about_div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #intro_section .img_div {
   height: 70vw;
   background-image: url("/assets/img/om_mig_img.webp");
@@ -32,9 +39,9 @@
   margin-top: 1rem;
 }
 
-#social_content {
+/* #social_content {
   margin-top: 3rem;
-}
+} */
 
 /********** about rules **********/
 
@@ -54,6 +61,7 @@
   padding: 5rem 1rem;
   grid-column: 2/3;
   place-items: center;
+  gap: 3rem;
 }
 
 .skills_text {
@@ -180,12 +188,9 @@
   .skill_icon svg {
     width: 70px;
   }
+}
 
-  #skills_section .section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+@media (min-width: 700px) {
   .skills_text {
     grid-column: 2/3;
     grid-row: 2;
@@ -195,6 +200,12 @@
     grid-column: 1/2;
     grid-row: 2;
   }
+
+  #skills_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
@@ -202,28 +213,27 @@
 
   #intro_section .section_wrapper {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr) auto;
+    grid-template-rows: repeat(1, 1fr) auto;
   }
 
-  #intro_section .about_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #intro_section h1 {
     text-align: center;
   }
 
   #intro_section .img_div {
-    height: 200%;
+    height: 100%;
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/3;
     width: 100%;
     place-self: normal;
     background-position: center center;
   }
 
   #intro_section #social_content {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    /* grid-column: 2/3;
+    grid-row: 3/4; */
+    grid-column: 1/2;
+    /* place-self: center; */
   }
 
   #intro_section .about_me_text {
