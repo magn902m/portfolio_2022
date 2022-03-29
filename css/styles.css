@@ -21,14 +21,18 @@ img {
 }
 
 html {
-  --color-primary1: #879f87;
+  /* --color-primary1: #879f87; */
+  --color-primary1: #abb9ab;
   --color-primary2: #f9f9f9;
 
   --color-secondary1: #171216;
-  --color-secondary2: #452e37;
+  --color-secondary2: #284039;
+  /* --color-secondary2: #dee5de; */
+  /* --color-secondary2: #b4abaf; */
+  /* --color-secondary2: #ac7289; */
 
-  --color-accent1: #3a2e39;
-  --color-accent2: #284039;
+  --color-accent1: #452e37;
+  --color-accent2: #3a2e39;
 
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
@@ -58,20 +62,29 @@ h1 {
   font-family: p22-mackinac-pro, serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
 }
 
 h2,
 h3 {
   font-family: p22-mackinac-pro, serif;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 h4 {
   font-family: p22-mackinac-pro, serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
 p {
@@ -87,7 +100,7 @@ a {
   font-weight: 700;
   font-style: normal;
   color: var(--color-secondary1);
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: 1s;
 }
 
@@ -99,26 +112,18 @@ a:hover {
 }
 
 a svg,
-aside a {
+svg {
   display: block;
   width: 70px;
   min-width: 40px;
   max-width: 100%;
   height: auto;
-  fill: var(--color-secondary2);
-}
-
-aside a {
-  background-color: var(--color-primary1);
-  border-radius: 3rem;
-  padding: 0.1rem;
+  fill: var(--color-accent1);
 }
 
 ul {
   font-family: p22-mackinac-pro, serif;
-  font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
   list-style: none;
 }
 
@@ -194,163 +199,8 @@ header ul {
   opacity: 0.8;
 }
 
-/********** Introductory rules **********/
-
-#introductory_section img {
-  /* max-width: 40%; */
-  grid-column: 3/4;
-  grid-row: 1;
-  justify-self: center;
-  width: 40vw;
-}
-
-#introductory_section .section_wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-
-  background-image: url("/assets/img/om_mig_img.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 57vh;
-}
-
-#introductory_section p {
-  font-size: clamp(2rem, 12vw + 1rem, 2.25rem);
-  text-align: center;
-}
-
-#introductory_section p {
-  font-size: clamp(2rem, 12vw + 1rem, 2.25rem);
-  text-align: center;
-}
-
-/********** about rules **********/
-
-#about_section {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-  grid-column: 1/4;
-  background-color: var(--color-secondary2);
-  padding: 4rem 2rem;
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-
-#about_section h2 {
-  grid-column: 2/3;
-  color: var(--color-primary2);
-}
-
-#about_section p {
-  color: var(--color-primary2);
-  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
-  line-height: 3.2rem;
-  text-align: center;
-}
-
-#about_section a {
-  color: var(--color-primary2);
-}
-
-#about_section .section_wrapper {
-  gap: 2rem;
-  grid-column: 2/3;
-}
-
-#about_section .about_text {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.cv,
-.skills {
-  width: 100%;
-  height: 20vw;
-  background-color: var(--color-accent2);
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.cv:hover,
-.skills:hover {
-  background-color: var(--color-primary1);
-  border: 1rem solid var(--color-accent2);
-}
-
-.cv a,
-.skills a {
-  color: var(--color-primary2);
-}
-
-/********** projects rules **********/
-
-/* card rules */
-#projects_section .section_wrapper {
-  display: grid;
-  margin-top: 2rem;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-  /* grid-gap: 1rem; */
-  grid-column: 2/3;
-  /* grid-row: 2; */
-}
-
-.project_card {
-  border-radius: 0.5rem;
-  box-shadow: 2px 2px 2px var(--color-secondary1);
-  background-color: var(--color-accent1);
-}
-
-.project_card_info a {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color-accent1);
-  border-radius: 0 0 0.5rem 0.5rem;
-  padding: 1rem;
-  align-items: center;
-}
-
-.project_card_info img {
-  width: 30px;
-}
-
-.project_card h3 {
-  font-size: 1.4rem;
-  color: var(--color-primary2);
-}
-
-#projects_section h2 {
-  grid-column: 2/3;
-}
-
-.projects_cards {
-  display: grid;
-  margin-top: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 3rem;
-  grid-column: 2/3;
-  grid-row: 2;
-}
-
-.project_card img {
-  object-fit: cover;
-  opacity: 0.5;
-  transition: 0.5s;
-  border-radius: 0.5rem;
-}
-
-.project_card img:hover {
-  opacity: 1;
-}
-
-#projects_section svg {
-  width: 35px;
-  height: 35px;
-  fill: var(--color-primary2);
+#menu a {
+  font-size: 1.5rem;
 }
 
 /********** aside rules **********/
@@ -366,6 +216,18 @@ aside {
   border-radius: 1rem 0 0 0;
 }
 
+aside a {
+  display: block;
+  width: 70px;
+  min-width: 40px;
+  max-width: 100%;
+  height: auto;
+  fill: var(--color-accent1);
+  background-color: var(--color-primary1);
+  border-radius: 3rem;
+  padding: 0.1rem;
+}
+
 .toggle-container {
   background-color: var(--color-primary1);
   border-radius: 1rem;
@@ -374,79 +236,111 @@ aside {
 
 /********** footer rules **********/
 
-footer {
-  background-color: var(--color-secondary2);
+#contact_footer {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
   padding: 5rem 1rem 5rem 1rem;
   margin-top: 5rem;
+  /* background-color: var(--color-secondary2); */
 }
-footer h2 {
-  /* font-size: 2.5rem; */
-  font-size: 13vw;
-  color: var(--color-primary2);
-}
-footer a {
-  font-size: 5rem;
-  color: var(--color-primary1);
-}
-footer .section_wrapper {
+
+#contact_footer .footer_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-column: 2/3;
 }
 
-@media (min-width: 540px) {
-  /********** Introductory rules **********/
-
-  #introductory_section p {
-    font-size: 10vw;
-  }
+#contact_footer h2 {
+  /* color: var(--color-primary2); */
+  grid-column: 1/3;
 }
 
-@media (min-width: 800px) and (orientation: landscape) {
-  /********** projects rules **********/
-
-  .projects_cards {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  }
-
-  /********** about rules **********/
-
-  #about_section .section_wrapper {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  #about_section .section_wrapper {
-    gap: 0;
-  }
+#contact_footer a {
+  font-size: 5rem;
+  color: var(--color-primary1);
 }
 
-@media (min-width: 1075px) {
-  /********** Introductory rules **********/
-
-  #introductory_section p {
-    font-size: 8vw;
-  }
+.my_info {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-@media (min-width: 1325px) {
-  /********** Introductory rules **********/
-
-  #introductory_section p {
-    font-size: 6vw;
-  }
+.my_info div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-@media (min-width: 2200px) {
-  /********** Introductory rules **********/
-
-  #introductory_section p {
-    font-size: 4vw;
-  }
+.my_info .number svg {
+  height: 70px;
 }
 
-@media (min-width: 3320px) {
-  /********** Introductory rules **********/
-
-  #introductory_section p {
-    font-size: 2vw;
-  }
+.email p,
+.number p {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
+
+/**** Contact form start ****/
+
+form {
+  max-width: 420px;
+  margin: 1rem auto;
+  background-color: var(--color-primary1);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.feedback-input {
+  color: var(--color-secondary1);
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 5px;
+  line-height: 1rem;
+  background-color: transparent;
+  border: 3px solid var(--color-primary2);
+  border: 0;
+  border-bottom: 0.5rem solid var(--color-accent1);
+  transition: all 0.3s;
+  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  /* border: 2px solid var(--color-secondary1); */
+  border-bottom: 1rem solid var(--color-secondary1);
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: p22-mackinac-pro, serif;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+
+  background: var(--color-accent1);
+  color: var(--color-primary1);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: -4px;
+
+  transition: all 0.5s;
+}
+[type="submit"]:hover {
+  background-color: var(--color-secondary1);
+}
+
+/**** Contact form end ****/
