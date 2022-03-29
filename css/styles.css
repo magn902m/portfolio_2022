@@ -100,16 +100,31 @@ a {
   font-weight: 700;
   font-style: normal;
   color: var(--color-secondary1);
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: 1s;
+  text-decoration: 4px underline var(--color-primary1);
 }
 
 a:hover {
-  text-decoration: 4px underline var(--color-accent2);
-  color: var(--color-accent2);
+  /* text-decoration: 4px underline var(--color-accent2); */
+  /* color: var(--color-accent2); */
+  text-decoration: 4px underline var(--color-secondary1);
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
 }
+
+/* .btn_a {
+  background-color: var(--color-accent1);
+  padding: 1.5rem 4rem;
+  border-radius: 0.3rem;
+  color: var(--color-primary2);
+  font-size: 2rem;
+}
+
+.btn_a:hover {
+  background-color: var(--color-accent2);
+  border-radius: 2.5rem;
+} */
 
 a svg,
 svg {
