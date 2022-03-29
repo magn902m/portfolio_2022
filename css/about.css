@@ -172,6 +172,15 @@
   gap: 3rem;
 }
 
+.cv_text a {
+  background-color: var(--color-accent1);
+  padding: 1rem 3rem;
+  border-radius: 0.3rem;
+}
+.cv_text {
+  text-align: center;
+}
+
 @media (min-width: 465px) {
   #intro_section .img_div {
     height: 19rem;
