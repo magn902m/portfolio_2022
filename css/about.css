@@ -67,7 +67,13 @@
 .skills_text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.skills_text div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 #skills_section h2 {
@@ -83,7 +89,7 @@
 #skills_section ul {
   display: flex;
   gap: 1rem;
-  color: var(--color-primary2);
+  /* color: var(--color-primary2); */
 }
 
 #skills_section li {
@@ -97,7 +103,7 @@
   min-width: 40px;
   max-width: 100%;
   height: auto;
-  fill: var(--color-secondary1);
+  fill: var(--color-accent1);
   place-self: center;
 }
 
@@ -176,6 +182,7 @@
   background-color: var(--color-accent1);
   padding: 1rem 3rem;
   border-radius: 0.3rem;
+  color: var(--color-primary2);
 }
 .cv_text {
   text-align: center;
