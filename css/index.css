@@ -120,10 +120,16 @@
 }
 
 .skill_icon {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  /* display: grid;
+  grid-template-columns: repeat(8, 1fr);
   place-items: center;
-  gap: 5rem;
+  gap: 5rem; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills_text div {
+  margin-bottom: 1.2rem;
 }
 
 /********** projects rules **********/
@@ -159,6 +165,22 @@
   border-radius: 0.5rem;
   box-shadow: 2px 2px 2px var(--color-secondary1);
   /* background-color: var(--color-accent1); */
+  position: relative;
+}
+
+.project_card ul {
+  position: absolute;
+  left: 0;
+  /* bottom: 9vh; */
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.project_card li {
+  background-color: var(--color-primary2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
 }
 
 .project_card_info a {
