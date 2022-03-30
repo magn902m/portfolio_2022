@@ -30,6 +30,13 @@ label:after {
   border-radius: 90px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  background-image: url("/assets/img/icons/sun-solid.svg");
+  background-repeat: no-repeat;
+}
+
+html[data-theme="dark"] label:after {
+  background-image: url("/assets/img/icons/moon-solid.svg");
+  background-color: var(--color-secondary2);
 }
 
 input:checked + label {
