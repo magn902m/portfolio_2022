@@ -95,6 +95,10 @@ p {
   font-size: 1rem;
 }
 
+.sans_p {
+  font-family: "Open Sans", sans-serif;
+}
+
 a {
   font-family: p22-mackinac-pro, serif;
   font-weight: 700;
@@ -129,10 +133,12 @@ a:hover {
 a svg,
 svg {
   display: block;
-  width: 70px;
+  width: 40px;
+  /* width: 70px;
   min-width: 40px;
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; */
+  /* height: auto; */
+  height: 40px;
   fill: var(--color-accent1);
 }
 
@@ -178,9 +184,9 @@ main > section {
 
 /********** Menu rules **********/
 header {
-  background-color: var(--color-primary1);
+  /* background-color: var(--color-primary1); */
   box-shadow: 1px 1px 2px 5px var(--box-shadow-1);
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   left: 0;
 }
@@ -201,6 +207,9 @@ header ul {
 
 .logo {
   align-self: center;
+  background-color: var(--color-primary1);
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
 }
 
 .logo img {
@@ -216,6 +225,15 @@ header ul {
 
 #menu a {
   font-size: 1.5rem;
+  text-decoration: transparent;
+  background-color: var(--color-primary1);
+  padding: 0rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#menu .github_icon {
+  padding: 0.1rem;
+  border-radius: 1rem;
 }
 
 /********** aside rules **********/
@@ -233,9 +251,9 @@ aside {
 
 aside a {
   display: block;
-  width: 70px;
-  min-width: 40px;
-  max-width: 100%;
+  /* width: 70px; */
+  /* min-width: 40px;
+  max-width: 100%; */
   height: auto;
   fill: var(--color-accent1);
   background-color: var(--color-primary1);
@@ -284,9 +302,9 @@ aside a {
   gap: 2rem;
 }
 
-.my_info .number svg {
+/* .my_info .number svg {
   height: 70px;
-}
+} */
 
 .email p,
 .number p {
