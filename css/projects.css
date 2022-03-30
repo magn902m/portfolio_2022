@@ -1,0 +1,27 @@
+#project_links_section {
+  grid-column: 1/4;
+  background-color: var(--color-secondary2);
+  padding: 5rem 1rem;
+}
+
+#project_links_section svg {
+  fill: var(--color-primary1);
+}
+
+#project_links_section .icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#project_links_section h2 {
+  color: var(--color-primary2);
+  text-align: center;
+}
+
+#project_links_section .section_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
