@@ -22,7 +22,9 @@ img {
 
 html {
   /* --color-primary1: #879f87; */
-  --color-primary1: #abb9ab;
+  /* --color-primary1: #abb9ab; */
+  /* --color-primary1: #b7dfb7; */
+  --color-primary1: #dae8da;
   --color-primary2: #f9f9f9;
 
   --color-secondary1: #171216;
@@ -184,7 +186,7 @@ main > section {
 
 /********** Menu rules **********/
 header {
-  /* background-color: var(--color-primary1); */
+  background-color: var(--color-primary1);
   box-shadow: 1px 1px 2px 5px var(--box-shadow-1);
   position: sticky;
   top: 0;
@@ -273,8 +275,8 @@ aside a {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
   padding: 5rem 1rem 5rem 1rem;
-  /* margin-top: 5rem; */
-  /* background-color: var(--color-secondary2); */
+  margin-top: 5rem;
+  background-color: var(--color-secondary2);
 }
 
 #contact_footer .footer_wrapper {
@@ -289,6 +291,11 @@ aside a {
   color: var(--color-primary1);
 }
 
+#contact_footer h2 {
+  text-align: center;
+  color: var(--color-primary2);
+}
+
 .my_info {
   margin: auto;
   display: flex;
@@ -296,99 +303,50 @@ aside a {
   gap: 2rem;
 }
 
-.my_info div {
+.my_info .contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact_info div {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-/* .my_info .number svg {
-  height: 70px;
-} */
-
-.email p,
-.number p {
+#contact_footer .my_info p {
   font-weight: 700;
   font-size: 1.2rem;
+  color: var(--color-primary2);
 }
 
-/********** Contact form start **********/
+#contact_footer .social_icons {
+  display: flex;
+  gap: 2rem;
+}
 
-form {
-  max-width: 420px;
-  margin: 1rem auto;
+#contact_footer svg {
+  fill: var(--color-accent1);
   background-color: var(--color-primary1);
-  padding: 1rem;
   border-radius: 0.2rem;
 }
 
-.feedback-input {
-  color: var(--color-secondary1);
-  font-family: p22-mackinac-pro, serif;
-  font-weight: 500;
-  font-size: 1rem;
-  border-radius: 5px;
-  line-height: 1rem;
-  background-color: transparent;
-  border: 3px solid var(--color-primary2);
-  border: 0;
-  border-bottom: 0.5rem solid var(--color-accent1);
-  transition: all 0.3s;
-  padding: 0.7rem;
-  margin-bottom: 1.5rem;
-  width: 100%;
-  outline: 0;
+#contact_footer a .github_icon {
+  border-radius: 1.2rem;
 }
-
-.feedback-input:focus {
-  /* border: 2px solid var(--color-secondary1); */
-  border-bottom: 1rem solid var(--color-secondary1);
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-[type="submit"] {
-  font-family: p22-mackinac-pro, serif;
-  width: 100%;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-
-  background: var(--color-accent1);
-  color: var(--color-primary1);
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: -4px;
-
-  transition: all 0.5s;
-}
-[type="submit"]:hover {
-  background-color: var(--color-secondary1);
-}
-
-/********** Contact form end **********/
 
 /********** media qys start **********/
 
 @media (min-width: 600px) {
   /********** footer rules **********/
-
-  #contact_footer {
-    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  .social_icons {
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  #contact_footer .footer_wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #contact_footer h2 {
-    grid-column: 1/3;
+  .my_info {
+    flex-direction: row;
   }
 }
 
