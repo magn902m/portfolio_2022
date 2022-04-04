@@ -62,7 +62,7 @@ html[data-theme="dark"] {
   --color-secondary2: #dae8da;
   --color-secondary1: #f9f9f9;
 
-  --color-accent1: #976f7f;
+  --color-accent1: #efc0d2;
   --color-accent2: #3a2e39;
 
   /* --color-primary1: #171216;
@@ -357,6 +357,14 @@ aside a {
   border-radius: 1.2rem;
   padding: 0.1rem;
 }
+
+/********** night mode start **********/
+
+html[data-theme="dark"] #contact_footer svg {
+  background-color: var(--color-primary2);
+}
+
+/********** night mode end **********/
 
 /********** media qys start **********/
 
