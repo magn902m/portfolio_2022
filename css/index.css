@@ -120,6 +120,11 @@
   gap: 2rem;
 }
 
+.skill_icon h3 {
+  grid-column: 1/4;
+  place-self: start;
+}
+
 #skills_section .skill_boxs {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -339,6 +344,10 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
+
+  .skill_icon h3 {
+    grid-column: 1/5;
+  }
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
@@ -376,6 +385,7 @@
   #about_section .skill_icon {
     /* place-items: normal; */
     place-items: center;
+    grid-column: 1/3;
   }
 
   /* .skill_icon div,
