@@ -36,6 +36,25 @@
   text-shadow: 1px 1px var(--color-primary2);
 }
 
+/* #introductory_section svg {
+  width: 200px;
+  height: auto;
+  fill: transparent;
+}
+
+#introductory_section .path {
+  stroke-dasharray: 100;
+  animation: dash 5s linear;
+  fill: var(--color-secondary2);
+  stroke: var(--color-secondary1);
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+} */
+
 /********** about rules **********/
 
 #highlight_section {
