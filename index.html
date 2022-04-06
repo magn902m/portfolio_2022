@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/brugermenu.css" />
     <link rel="stylesheet" href="css/night_mode.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animations.css" />
 
     <script defer src="js/script.js"></script>
     <script defer src="js/brugermenu.js"></script>
@@ -37,6 +38,7 @@
     />
   </head>
   <body>
+    <progress value="0" max="100"></progress>
     <header>
       <nav>
         <div class="logo">
@@ -109,6 +111,13 @@
             </svg>
           </div> -->
         </article>
+        <div class="arrow_down">
+          <a class="arrow" href="#highlight_section">
+            <span></span>
+            <!-- <span></span>
+          <span></span> -->
+          </a>
+        </div>
       </section>
 
       <section id="highlight_section">
@@ -163,7 +172,11 @@
             </div>
           </div>
           <div class="img">
-            <img src="/assets/img/about/magnus_nielsen_img.webp" alt="picture of Magnus" />
+            <img
+              class="right"
+              src="/assets/img/about/magnus_nielsen_img.webp"
+              alt="picture of Magnus"
+            />
           </div>
           <div class="skill_icon">
             <h3>My skills and technology's</h3>
