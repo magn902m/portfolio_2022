@@ -19,7 +19,6 @@
 
 #menu.hide {
   transition-delay: 500ms;
-  justify-content: end;
 }
 
 #menu.open {
@@ -196,6 +195,7 @@
 
   #menu.hide {
     transform: translateX(0);
+    justify-content: end;
   }
 
   #menu.hide a {
