@@ -273,6 +273,21 @@ header ul {
   opacity: 0.8;
 }
 
+/* .logo h2:hover::after {
+  content: " - magnus nielsen";
+} */
+
+.logo h2:hover::after {
+  content: ")";
+}
+.logo h2:hover::before {
+  content: "(";
+}
+
+.logo h2 {
+  transition: 1s;
+}
+
 #menu a {
   font-size: 1.5rem;
   text-decoration: transparent;
