@@ -229,32 +229,14 @@ main > section {
 /********** Menu rules **********/
 header {
   background-color: var(--color-primary1);
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  /* position: sticky;
-  position: -webkit-sticky; */
+  position: sticky;
+  position: -webkit-sticky;
   /* top: 12px; */
   top: 0;
   left: 0;
   z-index: 1000;
-}
-
-.k {
-  background-color: var(--color-dark);
-  padding: 1.5rem 2rem 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 4;
-  height: 3.5rem;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 4;
-  transition: top 0.3s;
 }
 
 header nav {
