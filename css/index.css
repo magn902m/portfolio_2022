@@ -135,61 +135,31 @@
   color: var(--color-primary1);
 }
 
-#about_section .skills_text ul {
-  display: flex;
-  gap: 1rem;
-}
-#about_section .skills_text li {
-  background-color: var(--color-secondary2);
-  color: var(--color-primary1);
-  padding: 0.2rem 0.6rem;
-  border-radius: 0.5rem;
-}
-
 #about_section .skill_icon {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  gap: 2rem;
+  gap: 8vh 0%;
 }
 
 .skill_icon h3 {
-  grid-column: 1/4;
+  grid-column: 1/2;
   place-self: start;
 }
 
-#skills_section .skill_boxs {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 3rem;
-  place-items: center;
-}
-
-#skills_section .skill_box {
-  height: 8rem;
-  width: 8rem;
-  padding-top: 2.5rem;
-  border: 0.5rem var(--color-secondary1) solid;
-  border-radius: 0.2rem;
-  text-align: center;
-}
-
-#skills_section {
-  overflow: hidden;
-}
-
-#skills_section .skill_icon {
-  /* display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  place-items: center;
-  gap: 5rem; */
+.skill_icon div {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
-#skills_section .skills_text div {
-  margin-bottom: 1.2rem;
+.skill_icon p {
+  color: var(--color-accent1);
+  font-weight: bold;
+}
+
+#about_section h3 {
+  margin-block-end: 2rem;
 }
 
 /********** projects rules **********/
@@ -341,6 +311,13 @@
   gap: 1rem;
 } */
 
+@media (min-width: 385px) {
+  /********** about rules **********/
+  #about_section .skill_icon {
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  }
+}
+
 @media (min-width: 600px) {
   /********** Introductory rules **********/
 
@@ -372,22 +349,6 @@
     grid-column: 1/3;
     grid-row: 2/3;
     align-self: end;
-  }
-
-  /********** about rules **********/
-
-  #about_section .skill_icon {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-
-  .skill_icon h3 {
-    grid-column: 1/5;
-  }
-
-  .skill_icon p {
-    color: var(--color-accent1);
-    font-weight: bold;
   }
 }
 
