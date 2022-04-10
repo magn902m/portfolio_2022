@@ -7,11 +7,6 @@ body {
   display: inline-block;
 }
 
-/* .right {
-  transform: translateX(100%);
-  opacity: 0;
-} */
-
 /***** Arrow down *****/
 
 /* Inspiration: https://codepen.io/raf187/pen/BvgGRQ */
@@ -58,5 +53,12 @@ body {
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .right {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }

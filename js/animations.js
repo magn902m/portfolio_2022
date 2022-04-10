@@ -5,11 +5,23 @@ window.addEventListener("DOMContentLoaded", setup);
 
 function setup() {
   console.log("setup");
-  // aniTxt();
-  // highlightSection();
-  progressBar();
-  // aboutSection();
-  contactSection();
+  let screenWidth = window.matchMedia("(max-width: 650px)");
+  screenSize(screenWidth); // Call listener function at run time
+  screenWidth.addListener(screenSize); // Attach listener function on state changes
+}
+
+function screenSize(screenWidth) {
+  if (screenWidth.matches) {
+    console.log("I am under 650px");
+    progressBar();
+    contactSection();
+  } else {
+    progressBar();
+    aniTxt();
+    highlightSection();
+    aboutSection();
+    contactSection();
+  }
 }
 
 function progressBar() {
@@ -86,13 +98,13 @@ function aboutSection() {
 }
 
 function contactSection() {
-  const contact = document.querySelector("#contact_footer");
+  const contact = document.querySelector("#contact_footer .footer_wrapper");
   gsap
     .timeline({
       id: "contact",
       scrollTrigger: {
         trigger: contact,
-        start: "20% 70%",
+        start: "10% 80%",
       },
     })
 
