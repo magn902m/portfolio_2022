@@ -29,6 +29,12 @@ function openMenu() {
 
   //Lytter efter om #burger_btn bliver klikket på, som efter vil kører hideMenu() functionen.
   burgerBtn.addEventListener("click", hideMenu);
+  const projects = document.querySelector("#menu #projects");
+  const about = document.querySelector("#menu #about");
+  const contact = document.querySelector("#menu #contact");
+  projects.addEventListener("click", hideMenu);
+  about.addEventListener("click", hideMenu);
+  contact.addEventListener("click", hideMenu);
 }
 
 // Hide Menu
@@ -39,6 +45,13 @@ function hideMenu() {
   const allStrokes = document.querySelectorAll("#burger_btn .stroke");
 
   burgerBtn.removeEventListener("click", hideMenu);
+
+  const projects = document.querySelector("#menu #projects");
+  const about = document.querySelector("#menu #about");
+  const contact = document.querySelector("#menu #contact");
+  projects.removeEventListener("click", openMenu);
+  about.removeEventListener("click", openMenu);
+  contact.removeEventListener("click", openMenu);
 
   burgerBtn.classList = "";
   allStrokes.forEach(offsetHeigthOnStroke);
