@@ -260,6 +260,7 @@ header ul {
   background-color: var(--color-primary1);
   border-radius: 0.5rem;
   padding: 0rem 0.5rem;
+  z-index: 1;
 }
 
 .logo img {
@@ -288,7 +289,7 @@ header ul {
   left: 0;
   top: 100%;
   white-space: nowrap;
-  z-index: 10;
+  z-index: 1001;
   background-color: var(--color-primary1);
 }
 
