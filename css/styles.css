@@ -110,7 +110,8 @@ h4 {
 }
 
 p {
-  font-family: p22-mackinac-pro, serif;
+  /* font-family: p22-mackinac-pro, serif; */
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.8rem;
@@ -118,12 +119,9 @@ p {
   color: var(--color-secondary1);
 }
 
-.sans_p {
-  font-family: "Open Sans", sans-serif;
-}
-
 a {
-  font-family: p22-mackinac-pro, serif;
+  /* font-family: p22-mackinac-pro, serif; */
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: var(--color-secondary1);
@@ -166,7 +164,8 @@ svg {
 }
 
 ul {
-  font-family: p22-mackinac-pro, serif;
+  /* font-family: p22-mackinac-pro, serif; */
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   list-style: none;
   color: var(--color-secondary1);
@@ -257,40 +256,33 @@ header ul {
 
 .logo {
   align-self: center;
-  background-color: var(--color-primary1);
+  /* background-color: var(--color-primary1); */
   border-radius: 0.5rem;
   padding: 0rem 0.5rem;
   z-index: 1;
 }
 
-.logo img {
-  width: 70px;
-  min-width: 40px;
-  max-width: 100%;
-  height: auto;
-}
-
-.logo:hover {
-  opacity: 0.8;
-}
-
 .logo a {
-  transition: 10s;
+  transition: all 3s;
 }
 
 .logo a:hover {
+  /* opacity: 0.8; */
   position: relative;
 }
 
 .logo a:hover::after {
-  content: "magnus nielsen";
+  content: "Magnus Nielsen";
   font-size: 2rem;
+  font-family: p22-mackinac-pro, serif;
   position: absolute;
   left: 0;
-  top: 100%;
+  /* top: 100%; */
+  top: 76%;
   white-space: nowrap;
   z-index: 1001;
   background-color: var(--color-primary1);
+  /* opacity: 0.8; */
 }
 
 #menu a {
